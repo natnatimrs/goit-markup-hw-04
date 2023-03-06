@@ -136,7 +136,7 @@ body {
 .header-list {
   display: flex;
   gap: 40px;
-      padding-top: 24px;
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 
@@ -175,11 +175,11 @@ body {
   color: var(--white);
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image:  linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)), url(../images/heroimg.jpg);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- 
+  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+    url(../images/heroimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   font-size: 56px;
@@ -219,9 +219,21 @@ body {
   gap: 24px;
 }
 .prioritets-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
-
+.prioritets-icons-background {
+  width: 264px;
+  height: 112px;
+  background-color: var(--cloud);
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prioritets-icons-items {
+  width: 64px;
+  height: 64px;
+}
 .prioritets-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -250,7 +262,7 @@ body {
 }
 
 .promotion-item {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 /*=============/PROMOTIONS=============*/
 
@@ -281,7 +293,20 @@ body {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+.team-expert-icon-list {
+}
+.team-expert-icon-item {
+}
 
+.team-expert-link {
+}
+
+.team-expert-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50px;
+}
 .team-expert {
   font-weight: 500;
   font-size: 20px;
@@ -302,7 +327,6 @@ body {
 }
 
 /*=============/TEAM=============*/
-
 
 /*=============PROJECT=============*/
 .project {
@@ -343,7 +367,7 @@ body {
 
 .benefits-item {
   background: var(--white);
-flex-basis: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .benefits-title-text {
@@ -375,11 +399,10 @@ flex-basis: calc((100% - 48px) / 3);
   padding-top: 120px;
   background: var(--navy-blue);
   padding-bottom: 100px;
-   max-width: 1440px;
-   margin: auto;
+  max-width: 1440px;
+  margin: auto;
 }
 .footer-logo {
- 
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--cloud);
