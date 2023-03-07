@@ -113,6 +113,8 @@ body {
 .header {
   background: var(--white);
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -271,6 +273,42 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
   background: var(--cloud);
+  max-width: 1440px;
+  margin: auto;
+}
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-social-item {
+  background-color: var(--iris);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.team-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--cloud);
+}
+.team-social-link:is(:hover, :focus) {
+  background-color: var(--okean);
+  border-radius: 50%;
+}
+.team-social-link:is(:hover, :focus) {
+  fill: var(--cloud);
+  color: var(--cloud);
+}
+
+.team-social-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .team-title {
@@ -287,26 +325,15 @@ body {
   display: flex;
   gap: 24px;
 }
-
+.team-subtitle {
+  margin-bottom: 8px;
+}
 .team-item {
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-.team-expert-icon-list {
-}
-.team-expert-icon-item {
-}
 
-.team-expert-link {
-}
-
-.team-expert-icon {
-  width: 40px;
-  height: 40px;
-  background-color: var(--iris);
-  border-radius: 50px;
-}
 .team-expert {
   font-weight: 500;
   font-size: 20px;
@@ -327,7 +354,53 @@ body {
 }
 
 /*=============/TEAM=============*/
+/*=============CUSTOMERS=============*/
+.customers-tittle {
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
 
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1440px;
+  margin: auto;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  color: var(--light-slate);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  background-color: var(--white);
+}
+
+.customers-link:is(:hover, :focus) {
+  fill: var(--okean);
+  border-color: var(--okean);
+}
+.customers-icons {
+  width: 104px;
+  height: 56px;
+  margin: auto;
+  fill: currentColor;
+}
+/*=============/CUSTOMERS=============*/
 /*=============PROJECT=============*/
 .project {
   margin-bottom: 120px;
@@ -340,6 +413,7 @@ body {
   padding-top: 96px;
   padding-bottom: 72px;
 }
+
 .project-item {
 }
 .project-btn {
@@ -399,8 +473,15 @@ body {
   padding-top: 120px;
   background: var(--navy-blue);
   padding-bottom: 100px;
-  max-width: 1440px;
-  margin: auto;
+  /* max-width: 1440px; */
+  /* margin: auto; */
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-action {
+  margin-right: 120px;
 }
 .footer-logo {
   line-height: 1.17;
@@ -411,11 +492,50 @@ body {
 }
 .focus-logo {
 }
-
+.footer-tittle {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: 16px;
+  text-align: left;
+}
 .footer-text {
   max-width: 264px;
   height: 72px;
   line-height: 1.5;
   color: var(--cornflower);
 }
+
+.footer-social {
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--white);
+}
+
+.footer-social-link:is(:hover, :focus) {
+  background-color: var(--green);
+  border-radius: 50%;
+}
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /*=============/FOOTER=============*/
