@@ -38,7 +38,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
 }
 
 body {
@@ -75,13 +74,7 @@ body {
 
 .link {
   text-decoration: none;
-  font-style: normal;
   color: inherit;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--okean);
 }
 
 .btn {
@@ -100,6 +93,9 @@ body {
   background-color: var(--okean);
   color: var(--white);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .tittle {
@@ -132,6 +128,10 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.header-logo:is(:hover, :focus) {
+  color: var(--okean);
+}
 .focus-logo {
   color: var(--iris);
 }
@@ -151,6 +151,11 @@ body {
 .header-link {
   display: block;
 }
+
+.header-link:is(:hover, :focus) {
+   color: var(--okean);
+}
+
 .header-adress {
 }
 .adress {
@@ -166,6 +171,10 @@ body {
 .contact-item {
   line-height: 1.5;
   color: var(--slate);
+}
+
+.contact-item:is(:hover, :focus) {
+   color: var(--okean);
 }
 /*=============/HEADER=============*/
 
@@ -208,6 +217,8 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
 /*=============/HERO=============*/
 
 /*=============PRIORITETS=============*/
@@ -232,10 +243,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
+   border-radius: 4px;
 }
 .prioritets-icons-items {
   width: 64px;
   height: 64px;
+ 
 }
 .prioritets-item-title {
   font-weight: 500;
@@ -284,8 +298,7 @@ body {
 }
 
 .team-social-item {
-  background-color: var(--iris);
-  border-radius: 50%;
+fill: var(--cloud);
   width: 40px;
   height: 40px;
 }
@@ -296,16 +309,14 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--cloud);
+  background-color: var(--iris);
+  border-radius: 50%;
+  
 }
 .team-social-link:is(:hover, :focus) {
   background-color: var(--okean);
   border-radius: 50%;
 }
-.team-social-link:is(:hover, :focus) {
-  fill: var(--cloud);
-  color: var(--cloud);
-}
-
 .team-social-icon {
   width: 16px;
   height: 16px;
@@ -379,6 +390,7 @@ body {
 .customers-item {
   width: 168px;
   height: 88px;
+  
 }
 
 .customers-link {
@@ -394,7 +406,7 @@ body {
 }
 
 .customers-link:is(:hover, :focus) {
-  fill: var(--okean);
+  color: var(--okean);
   border-color: var(--okean);
 }
 .customers-icons {
@@ -428,11 +440,6 @@ body {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
 }
-
-.project-btn:is(:hover, :focus) {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 /*=============/PROJECT=============*/
 
 /*=============BENEFITS=============*/
@@ -450,11 +457,12 @@ body {
   background: var(--white);
   flex-basis: calc((100% - 48px) / 3);
 }
-
-.benefits-item:is(:hover, :focus) {
+.benefits-link {
+  display: block;
+}
+.benefits-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .benefits-title-text {
@@ -486,8 +494,6 @@ body {
   padding-top: 120px;
   background: var(--navy-blue);
   padding-bottom: 100px;
-  /* max-width: 1440px; */
-  /* margin: auto; */
 }
 .footer-container {
   display: flex;
@@ -503,7 +509,8 @@ body {
   margin-bottom: 16px;
   display: block;
 }
-.focus-logo {
+.footer-logo:is(:hover, :focus) {
+  color: var(--okean);
 }
 .footer-tittle {
   font-weight: 500;
@@ -530,8 +537,7 @@ body {
 .footer-social-item {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+
 }
 .footer-social-link {
   width: 100%;
@@ -540,11 +546,12 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .footer-social-link:is(:hover, :focus) {
   background-color: var(--green);
-  border-radius: 50%;
 }
 .footer-social-icon {
   width: 24px;
